@@ -92,6 +92,8 @@ public:
 template<typename Key, typename Value>
 class KLfuCache : public KICachePolicy<Key, Value>
 {
+    public:
+        using Node = typename FreqList<Key, Value>::Node;
 
 
 
